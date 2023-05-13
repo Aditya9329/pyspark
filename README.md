@@ -33,3 +33,7 @@ empdf.withColumn("SALARY",col("SALARY")+1000).select("EMPLOYEE_ID","FIRST_NAME",
 ```bash
 empdf.withColumnRenamed("SALARY","EMP_SALARY").show()
 ```
+### drop column name
+``bash
+ empdf.drop("COMMISSION_PCT").show()
+ ```
